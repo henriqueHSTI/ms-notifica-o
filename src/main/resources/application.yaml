@@ -2,6 +2,8 @@ server:
   port: 8060
 
 spring:
+  application:
+    name: ms-notificacao
   rabbitmq:
     host: localhost
     port: 5672
@@ -12,3 +14,8 @@ spring:
 user:
   queue:
     name-create: create-user
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
